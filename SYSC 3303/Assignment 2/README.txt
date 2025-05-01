@@ -1,0 +1,3 @@
+Client.cpp, Server.cpp and IntermediateHost.cpp are the main files used, as well as Datagram.h, which contains functions and properties for each program to use. They are all included in Codes folder.
+
+To run the assignment, compile each file and run, in order, Server.cpp, IntermediateHost.cpp, and then Client.cpp. When I run them like that in three separate terminals, each describes when they receive packets, when they send them, as well as the information for the packet.

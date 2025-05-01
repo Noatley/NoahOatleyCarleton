@@ -1,0 +1,301 @@
+Reading data from 'callgrind.out.49131'...
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.49131' (creator: callgrind-3.22.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 3487002
+Trigger: Program termination
+Profiled target:  ./Assignment1 (PID 49131, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                  
+--------------------------------------------------------------------------------
+19,099,935 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                  file:function
+--------------------------------------------------------------------------------
+1,260,309 ( 6.60%)  ./libio/./libio/iofwrite.c:fwrite [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  987,152 ( 5.17%)  ./libio/./libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  969,171 ( 5.07%)  ???:std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  638,185 ( 3.34%)  ???:std::ostream::sentry::sentry(std::ostream&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  503,306 ( 2.64%)  ./elf/./elf/dl-lookup.c:do_lookup_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  498,994 ( 2.61%)  ./elf/../sysdeps/generic/dl-new-hash.h:_dl_lookup_symbol_x
+  368,000 ( 1.93%)  ???:std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  349,676 ( 1.83%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__mempcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  339,507 ( 1.78%)  ./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c:clock_nanosleep@@GLIBC_2.17 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  336,308 ( 1.76%)  ./libio/./libio/libioP.h:fwrite
+  232,021 ( 1.21%)  ???:std::ostream& std::ostream::_M_insert<long>(long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  224,061 ( 1.17%)  ./libio/./libio/fileops.c:_IO_do_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  214,368 ( 1.12%)  ???:std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const [/home/noatley/3303/Assignment1/Assignment1]
+  214,368 ( 1.12%)  ???:void std::this_thread::sleep_for<long, std::ratio<1l, 1000l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  207,796 ( 1.09%)  ./nptl/./nptl/pthread_mutex_lock.c:pthread_mutex_lock@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  200,040 ( 1.05%)  ???:std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  197,040 ( 1.03%)  ???:std::chrono::duration<long, std::ratio<1l, 1l> >::count() const [/home/noatley/3303/Assignment1/Assignment1]
+  187,401 ( 0.98%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  184,688 ( 0.97%)  ./nptl/./nptl/cancellation.c:__pthread_enable_asynccancel [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  176,044 ( 0.92%)  ???:std::ostream::put(char) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  174,872 ( 0.92%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_unique_pos(int const&) [/home/noatley/3303/Assignment1/Assignment1]
+  174,040 ( 0.91%)  ???:Agent<int>::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  173,145 ( 0.91%)  ./nptl/./nptl/cancellation.c:__pthread_disable_asynccancel [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  164,174 ( 0.86%)  ???:std::ostream::flush() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  161,375 ( 0.84%)  ???:Chef<int>::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  161,004 ( 0.84%)  ???:0x0000000000146900 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  160,040 ( 0.84%)  ./libio/./libio/putc.c:putc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  158,424 ( 0.83%)  ???:void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  156,488 ( 0.82%)  ???:int std::uniform_int_distribution<int>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<int>::param_type const&) [/home/noatley/3303/Assignment1/Assignment1]
+  153,705 ( 0.80%)  ./nptl/./nptl/pthread_mutex_unlock.c:pthread_mutex_unlock@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  153,120 ( 0.80%)  ???:std::common_type<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  152,038 ( 0.80%)  ./libio/./libio/fileops.c:_IO_file_write@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  149,106 ( 0.78%)  ./string/../sysdeps/x86_64/multiarch/strlen-avx2.S:__strlen_avx2 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  147,743 ( 0.77%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  137,808 ( 0.72%)  ???:std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&) [/home/noatley/3303/Assignment1/Assignment1]
+  136,374 ( 0.71%)  ./libio/./libio/iofflush.c:fflush [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  134,532 ( 0.70%)  ???:std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_unique<int const&>(int const&) [/home/noatley/3303/Assignment1/Assignment1]
+  133,481 ( 0.70%)  ???:std::_Rb_tree_iterator<int> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_<int const&, std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, int const&, std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Alloc_node&) [/home/noatley/3303/Assignment1/Assignment1]
+  126,018 ( 0.66%)  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::xsputn(char const*, long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+  122,496 ( 0.64%)  ???:std::chrono::duration<long, std::ratio<1l, 1l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1l> >, std::ratio<1l, 1000l>, long, true, false>::__cast<long, std::ratio<1l, 1000l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  118,668 ( 0.62%)  ???:bool std::chrono::operator< <long, std::ratio<1l, 1000l>, long, std::ratio<1l, 1000l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  114,286 ( 0.60%)  ./elf/./elf/dl-lookup.c:check_match [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+  113,832 ( 0.60%)  ???:std::chrono::duration<long, std::ratio<1l, 1l> >::duration<long, void>(long const&) [/home/noatley/3303/Assignment1/Assignment1]
+  112,259 ( 0.59%)  ./libio/./libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  112,153 ( 0.59%)  ./elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+  111,158 ( 0.58%)  ./elf/./elf/do-rel.h:_dl_relocate_object
+  108,890 ( 0.57%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  107,502 ( 0.56%)  ???:std::common_type<std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::operator-<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+  106,000 ( 0.55%)  ???:void std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_construct_node<int const&>(std::_Rb_tree_node<int>*, int const&) [/home/noatley/3303/Assignment1/Assignment1]
+  101,545 ( 0.53%)  ./nptl/./nptl/pthread_cond_wait.c:pthread_cond_wait@@GLIBC_2.3.2 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   98,000 ( 0.51%)  ???:int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [/home/noatley/3303/Assignment1/Assignment1]
+   96,024 ( 0.50%)  ./io/../sysdeps/unix/sysv/linux/write.c:write [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   91,872 ( 0.48%)  ???:std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1000l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   91,872 ( 0.48%)  ???:std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   91,872 ( 0.48%)  ???:std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, std::ratio<1l, 1l>, void>(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   90,402 ( 0.47%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   88,000 ( 0.46%)  ???:0x0000000000142070 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   87,699 ( 0.46%)  ???:bool std::chrono::operator< <long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   86,490 ( 0.45%)  ???:__gthread_mutex_lock(pthread_mutex_t*) [/home/noatley/3303/Assignment1/Assignment1]
+   86,490 ( 0.45%)  ???:__gthread_mutex_unlock(pthread_mutex_t*) [/home/noatley/3303/Assignment1/Assignment1]
+   84,021 ( 0.44%)  ???:std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   80,724 ( 0.42%)  ???:std::mutex::lock() [/home/noatley/3303/Assignment1/Assignment1]
+   79,884 ( 0.42%)  ./posix/../sysdeps/unix/sysv/linux/nanosleep.c:nanosleep [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   79,884 ( 0.42%)  ???:std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [/home/noatley/3303/Assignment1/Assignment1]
+   76,560 ( 0.40%)  ???:std::chrono::duration<long, std::ratio<1l, 1000l> >::zero() [/home/noatley/3303/Assignment1/Assignment1]
+   75,720 ( 0.40%)  ???:std::set<int, std::less<int>, std::allocator<int> >::insert(int const&) [/home/noatley/3303/Assignment1/Assignment1]
+   74,907 ( 0.39%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_S_key(std::_Rb_tree_node<int> const*) [/home/noatley/3303/Assignment1/Assignment1]
+   71,819 ( 0.38%)  ???:std::_Rb_tree_iterator<int>::_Rb_tree_iterator(std::_Rb_tree_node_base*) [/home/noatley/3303/Assignment1/Assignment1]
+   71,615 ( 0.37%)  ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S:strcmp [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   69,052 ( 0.36%)  ???:Agent<int>::chooseFoods() [/home/noatley/3303/Assignment1/Assignment1]
+   68,313 ( 0.36%)  ./libio/./libio/libioP.h:fflush
+   67,896 ( 0.36%)  ???:std::chrono::duration<long, std::ratio<1l, 1000000000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::ratio<1000000000l, 1l>, long, false, true>::__cast<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   66,309 ( 0.35%)  ???:std::unique_lock<std::mutex>::unlock() [/home/noatley/3303/Assignment1/Assignment1]
+   65,624 ( 0.34%)  ???:std::__detail::_Mod<unsigned long, 2147483647ul, 16807ul, 0ul, true, true>::__calc(unsigned long) [/home/noatley/3303/Assignment1/Assignment1]
+   64,459 ( 0.34%)  ./nptl/./nptl/pthread_cond_common.c:pthread_cond_broadcast@@GLIBC_2.3.2
+   63,426 ( 0.33%)  ???:std::mutex::unlock() [/home/noatley/3303/Assignment1/Assignment1]
+   63,426 ( 0.33%)  ???:std::unique_lock<std::mutex>::lock() [/home/noatley/3303/Assignment1/Assignment1]
+   63,100 ( 0.33%)  ???:std::pair<std::_Rb_tree_const_iterator<int>, bool>::pair<std::_Rb_tree_iterator<int>&, bool&, true>(std::_Rb_tree_iterator<int>&, bool&) [/home/noatley/3303/Assignment1/Assignment1]
+   61,237 ( 0.32%)  ???:std::_Rb_tree_node<int>::_M_valptr() const [/home/noatley/3303/Assignment1/Assignment1]
+   60,543 ( 0.32%)  ???:std::unique_lock<std::mutex>::unique_lock(std::mutex&) [/home/noatley/3303/Assignment1/Assignment1]
+   60,128 ( 0.31%)  ./nptl/./nptl/pthread_cond_broadcast.c:pthread_cond_broadcast@@GLIBC_2.3.2 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   58,021 ( 0.30%)  ???:0x00000000048f6360 [???]
+   57,660 ( 0.30%)  ???:__gthread_active_p() [/home/noatley/3303/Assignment1/Assignment1]
+   57,181 ( 0.30%)  ???:Box<int>::put(int, int) [/home/noatley/3303/Assignment1/Assignment1]
+   56,728 ( 0.30%)  ???:std::_Identity<int>::operator()(int const&) const [/home/noatley/3303/Assignment1/Assignment1]
+   56,580 ( 0.30%)  ???:std::chrono::duration<long, std::ratio<1l, 1l> >::zero() [/home/noatley/3303/Assignment1/Assignment1]
+   56,324 ( 0.29%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   56,000 ( 0.29%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_Node_allocator() [/home/noatley/3303/Assignment1/Assignment1]
+   56,000 ( 0.29%)  ???:std::_V2::condition_variable_any::notify_all() [/home/noatley/3303/Assignment1/Assignment1]
+   55,670 ( 0.29%)  ???:__gnu_cxx::__aligned_membuf<int>::_M_ptr() const [/home/noatley/3303/Assignment1/Assignment1]
+   55,528 ( 0.29%)  ???:std::pair<std::_Rb_tree_iterator<int>, bool>::pair<std::_Rb_tree_iterator<int>, bool, true>(std::_Rb_tree_iterator<int>&&, bool&&) [/home/noatley/3303/Assignment1/Assignment1]
+   54,000 ( 0.28%)  ???:std::__new_allocator<std::_Rb_tree_node<int> >::allocate(unsigned long, void const*) [/home/noatley/3303/Assignment1/Assignment1]
+   53,841 ( 0.28%)  ???:std::unique_lock<std::mutex>::~unique_lock() [/home/noatley/3303/Assignment1/Assignment1]
+   53,592 ( 0.28%)  ???:bool std::chrono::operator<=<long, std::ratio<1l, 1000l>, long, std::ratio<1l, 1000l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   53,256 ( 0.28%)  ???:std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [/home/noatley/3303/Assignment1/Assignment1]
+   52,980 ( 0.28%)  ???:void std::_V2::condition_variable_any::wait<std::mutex>(std::mutex&) [/home/noatley/3303/Assignment1/Assignment1]
+   52,000 ( 0.27%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_destroy_node(std::_Rb_tree_node<int>*) [/home/noatley/3303/Assignment1/Assignment1]
+   49,938 ( 0.26%)  ???:std::less<int>::operator()(int const&, int const&) const [/home/noatley/3303/Assignment1/Assignment1]
+   49,764 ( 0.26%)  ???:std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<int, void>(int const&) [/home/noatley/3303/Assignment1/Assignment1]
+   48,093 ( 0.25%)  ???:Box<int>::boxInquiry(int&, int&) [/home/noatley/3303/Assignment1/Assignment1]
+   48,012 ( 0.25%)  ./libio/./libio/libioP.h:putc
+   48,000 ( 0.25%)  ???:void std::__advance<std::_Rb_tree_const_iterator<int>, long>(std::_Rb_tree_const_iterator<int>&, long, std::bidirectional_iterator_tag) [/home/noatley/3303/Assignment1/Assignment1]
+   46,000 ( 0.24%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_put_node(std::_Rb_tree_node<int>*) [/home/noatley/3303/Assignment1/Assignment1]
+   45,361 ( 0.24%)  ???:Chef<int>::checkFood(int, int) [/home/noatley/3303/Assignment1/Assignment1]
+   44,250 ( 0.23%)  ./nptl/./nptl/futex-internal.c:__futex_abstimed_wait_cancelable64 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   44,101 ( 0.23%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_erase(std::_Rb_tree_node<int>*) [/home/noatley/3303/Assignment1/Assignment1]
+   44,000 ( 0.23%)  ???:std::_Rb_tree_node<int>* std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_create_node<int const&>(int const&) [/home/noatley/3303/Assignment1/Assignment1]
+   44,000 ( 0.23%)  ???:std::_Rb_tree_node<int>::_M_valptr() [/home/noatley/3303/Assignment1/Assignment1]
+   44,000 ( 0.23%)  ???:std::ostream::operator<<(int) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   44,000 ( 0.23%)  ???:std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair<std::_Rb_tree_node<int>*&, std::_Rb_tree_node_base*&, true>(std::_Rb_tree_node<int>*&, std::_Rb_tree_node_base*&) [/home/noatley/3303/Assignment1/Assignment1]
+   43,245 ( 0.23%)  ???:std::__shared_ptr_access<std::mutex, (__gnu_cxx::_Lock_policy)2, false, false>::operator*() const [/home/noatley/3303/Assignment1/Assignment1]
+   43,000 ( 0.23%)  ???:Box<int>::get() [/home/noatley/3303/Assignment1/Assignment1]
+   42,011 ( 0.22%)  ???:0x00000000048f5d00 [???]
+   42,004 ( 0.22%)  ???:0x0000000004b25430 [???]
+   40,663 ( 0.21%)  ???:std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() [/home/noatley/3303/Assignment1/Assignment1]
+   40,384 ( 0.21%)  ???:std::uniform_int_distribution<int>::param_type::a() const [/home/noatley/3303/Assignment1/Assignment1]
+   40,000 ( 0.21%)  ???:__gnu_cxx::__aligned_membuf<int>::_M_ptr() [/home/noatley/3303/Assignment1/Assignment1]
+   40,000 ( 0.21%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::begin() const [/home/noatley/3303/Assignment1/Assignment1]
+   39,962 ( 0.21%)  ???:std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   39,942 ( 0.21%)  ???:std::chrono::duration_values<long>::zero() [/home/noatley/3303/Assignment1/Assignment1]
+   39,606 ( 0.21%)  ???:bool std::chrono::operator<=<long, std::ratio<1l, 1l>, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&, std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   38,969 ( 0.20%)  ???:__gnu_cxx::__aligned_membuf<int>::_M_addr() const [/home/noatley/3303/Assignment1/Assignment1]
+   38,280 ( 0.20%)  ???:std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, long, std::ratio<1l, 1000l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   38,280 ( 0.20%)  ???:std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   38,280 ( 0.20%)  ???:std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1l> > >::value, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1l> >, long, std::ratio<1l, 1000l> >(std::chrono::duration<long, std::ratio<1l, 1000l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   38,000 ( 0.20%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_drop_node(std::_Rb_tree_node<int>*) [/home/noatley/3303/Assignment1/Assignment1]
+   38,000 ( 0.20%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_node() [/home/noatley/3303/Assignment1/Assignment1]
+   38,000 ( 0.20%)  ???:std::__new_allocator<std::_Rb_tree_node<int> >::deallocate(std::_Rb_tree_node<int>*, unsigned long) [/home/noatley/3303/Assignment1/Assignment1]
+   37,860 ( 0.20%)  ???:std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>::operator()() [/home/noatley/3303/Assignment1/Assignment1]
+   36,899 ( 0.19%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_erase(std::_Rb_tree_node<int>*)'2 [/home/noatley/3303/Assignment1/Assignment1]
+   36,777 ( 0.19%)  ???:std::chrono::duration<long, std::ratio<1l, 1l> >::duration<int, void>(int const&) [/home/noatley/3303/Assignment1/Assignment1]
+   36,192 ( 0.19%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_end() [/home/noatley/3303/Assignment1/Assignment1]
+   36,000 ( 0.19%)  ???:std::_Rb_tree_node<int>* std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Alloc_node::operator()<int const&>(int const&) const [/home/noatley/3303/Assignment1/Assignment1]
+   35,336 ( 0.19%)  ???:int std::uniform_int_distribution<int>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&) [/home/noatley/3303/Assignment1/Assignment1]
+   35,240 ( 0.18%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_begin() [/home/noatley/3303/Assignment1/Assignment1]
+   34,011 ( 0.18%)  ???:0x00000000048f4b20 [???]
+   32,080 ( 0.17%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   32,016 ( 0.17%)  ???:operator new(unsigned long, void*) [/home/noatley/3303/Assignment1/Assignment1]
+   32,000 ( 0.17%)  ???:std::lock_guard<std::mutex>::lock_guard(std::mutex&) [/home/noatley/3303/Assignment1/Assignment1]
+   30,288 ( 0.16%)  ???:std::_Rb_tree_const_iterator<int>::_Rb_tree_const_iterator(std::_Rb_tree_iterator<int> const&) [/home/noatley/3303/Assignment1/Assignment1]
+   29,708 ( 0.16%)  ./elf/./elf/dl-tunables.c:__GI___tunables_init [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   29,620 ( 0.16%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::begin() [/home/noatley/3303/Assignment1/Assignment1]
+   28,830 ( 0.15%)  ???:std::__shared_ptr_access<std::mutex, (__gnu_cxx::_Lock_policy)2, false, false>::_M_get() const [/home/noatley/3303/Assignment1/Assignment1]
+   28,290 ( 0.15%)  ???:std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   28,192 ( 0.15%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_mbegin() const [/home/noatley/3303/Assignment1/Assignment1]
+   28,007 ( 0.15%)  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::overflow(int) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   28,004 ( 0.15%)  ???:std::basic_ostream<char, std::char_traits<char> >& std::operator<< <char, std::char_traits<char>, std::allocator<char> >(std::basic_ostream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   28,000 ( 0.15%)  ???:__gnu_cxx::__aligned_membuf<int>::_M_addr() [/home/noatley/3303/Assignment1/Assignment1]
+   27,764 ( 0.15%)  ???:unsigned long std::__detail::__mod<unsigned long, 2147483647ul, 16807ul, 0ul>(unsigned long) [/home/noatley/3303/Assignment1/Assignment1]
+   26,598 ( 0.14%)  ./nptl/../nptl/pthread_mutex_lock.c:__pthread_mutex_cond_lock [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   24,948 ( 0.13%)  ???:std::locale::id::_M_id() const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   24,344 ( 0.13%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_S_right(std::_Rb_tree_node_base*) [/home/noatley/3303/Assignment1/Assignment1]
+   24,000 ( 0.13%)  ???:std::lock_guard<std::mutex>::~lock_guard() [/home/noatley/3303/Assignment1/Assignment1]
+   23,841 ( 0.12%)  ./nptl/./nptl/pthread_mutex_unlock.c:__pthread_mutex_unlock_usercnt [/usr/lib/x86_64-linux-gnu/libc.so.6]
+   23,346 ( 0.12%)  ???:std::__is_constant_evaluated() [/home/noatley/3303/Assignment1/Assignment1]
+   23,086 ( 0.12%)  ./nptl/../nptl/descr.h:__pthread_enable_asynccancel
+   23,064 ( 0.12%)  ???:std::__shared_ptr<std::mutex, (__gnu_cxx::_Lock_policy)2>::get() const [/home/noatley/3303/Assignment1/Assignment1]
+   22,632 ( 0.12%)  ???:std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1l> > >::value, std::chrono::duration<long, std::ratio<1l, 1l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1l> >, long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&) [/home/noatley/3303/Assignment1/Assignment1]
+   22,075 ( 0.12%)  ???:std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy() [/home/noatley/3303/Assignment1/Assignment1]
+   22,059 ( 0.12%)  ./malloc/./malloc/arena.c:free
+   22,000 ( 0.12%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Alloc_node::_Alloc_node(std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >&) [/home/noatley/3303/Assignment1/Assignment1]
+   22,000 ( 0.12%)  ???:std::_Rb_tree_const_iterator<int>::_Rb_tree_const_iterator(std::_Rb_tree_node_base const*) [/home/noatley/3303/Assignment1/Assignment1]
+   22,000 ( 0.12%)  ???:std::_Rb_tree_const_iterator<int>::operator*() const [/home/noatley/3303/Assignment1/Assignment1]
+   21,336 ( 0.11%)  ???:bool&& std::forward<bool>(std::remove_reference<bool>::type&) [/home/noatley/3303/Assignment1/Assignment1]
+   21,000 ( 0.11%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Rb_tree_impl<std::less<int>, true>::_Rb_tree_impl() [/home/noatley/3303/Assignment1/Assignment1]
+   21,000 ( 0.11%)  ???:std::uniform_int_distribution<int>::param_type::param_type(int, int) [/home/noatley/3303/Assignment1/Assignment1]
+   20,430 ( 0.11%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_S_key(std::_Rb_tree_node_base const*) [/home/noatley/3303/Assignment1/Assignment1]
+   20,192 ( 0.11%)  ???:std::uniform_int_distribution<int>::param_type::b() const [/home/noatley/3303/Assignment1/Assignment1]
+   20,181 ( 0.11%)  ???:std::mutex* std::__addressof<std::mutex>(std::mutex&) [/home/noatley/3303/Assignment1/Assignment1]
+   20,009 ( 0.10%)  ???:0x00000000048f3cf0 [???]
+   20,005 ( 0.10%)  ./libio/./libio/libioP.h:_IO_do_write@@GLIBC_2.2.5
+   20,004 ( 0.10%)  ???:0x000000000010a4a0 [???]
+   20,000 ( 0.10%)  ???:std::set<int, std::less<int>, std::allocator<int> >::begin() const [/home/noatley/3303/Assignment1/Assignment1]
+   19,848 ( 0.10%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_S_left(std::_Rb_tree_node_base*) [/home/noatley/3303/Assignment1/Assignment1]
+   19,253 ( 0.10%)  ???:std::operator==(std::_Rb_tree_iterator<int> const&, std::_Rb_tree_iterator<int> const&) [/home/noatley/3303/Assignment1/Assignment1]
+   19,000 ( 0.10%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::~_Rb_tree() [/home/noatley/3303/Assignment1/Assignment1]
+   18,543 ( 0.10%)  ???:std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count(std::__shared_count<(__gnu_cxx::_Lock_policy)2> const&) [/home/noatley/3303/Assignment1/Assignment1]
+   17,668 ( 0.09%)  ???:bool& std::forward<bool&>(std::remove_reference<bool&>::type&) [/home/noatley/3303/Assignment1/Assignment1]
+   17,668 ( 0.09%)  ???:std::_Rb_tree_iterator<int>& std::forward<std::_Rb_tree_iterator<int>&>(std::remove_reference<std::_Rb_tree_iterator<int>&>::type&) [/home/noatley/3303/Assignment1/Assignment1]
+   17,668 ( 0.09%)  ???:std::_Rb_tree_iterator<int>&& std::forward<std::_Rb_tree_iterator<int> >(std::remove_reference<std::_Rb_tree_iterator<int> >::type&) [/home/noatley/3303/Assignment1/Assignment1]
+   17,660 ( 0.09%)  ???:std::__shared_ptr<std::mutex, (__gnu_cxx::_Lock_policy)2>::__shared_ptr(std::__shared_ptr<std::mutex, (__gnu_cxx::_Lock_policy)2> const&) [/home/noatley/3303/Assignment1/Assignment1]
+   17,660 ( 0.09%)  ???:std::unique_lock<std::mutex>::unique_lock(std::unique_lock<std::mutex>&&) [/home/noatley/3303/Assignment1/Assignment1]
+   17,000 ( 0.09%)  ???:std::_Rb_tree_header::_M_reset() [/home/noatley/3303/Assignment1/Assignment1]
+   16,648 ( 0.09%)  ./elf/./elf/dl-version.c:_dl_check_map_versions [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   16,000 ( 0.08%)  ???:std::uniform_int_distribution<int>::uniform_int_distribution(int, int) [/home/noatley/3303/Assignment1/Assignment1]
+   15,011 ( 0.08%)  ???:std::_V2::condition_variable_any::_Unlock<std::mutex>::~_Unlock() [/home/noatley/3303/Assignment1/Assignment1]
+   14,144 ( 0.07%)  ???:std::__shared_count<(__gnu_cxx::_Lock_policy)2>::~__shared_count() [/home/noatley/3303/Assignment1/Assignment1]
+   14,002 ( 0.07%)  ???:0x000000000010a480 [???]
+   14,000 ( 0.07%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Rb_tree_impl<std::less<int>, true>::~_Rb_tree_impl() [/home/noatley/3303/Assignment1/Assignment1]
+   14,000 ( 0.07%)  ???:std::_Rb_tree_const_iterator<int>::operator++() [/home/noatley/3303/Assignment1/Assignment1]
+   14,000 ( 0.07%)  ???:std::_Rb_tree_node<int>*& std::forward<std::_Rb_tree_node<int>*&>(std::remove_reference<std::_Rb_tree_node<int>*&>::type&) [/home/noatley/3303/Assignment1/Assignment1]
+   14,000 ( 0.07%)  ???:std::_Rb_tree_node_base*& std::forward<std::_Rb_tree_node_base*&>(std::remove_reference<std::_Rb_tree_node_base*&>::type&) [/home/noatley/3303/Assignment1/Assignment1]
+   13,314 ( 0.07%)  ???:0x000000000010a380 [???]
+   13,245 ( 0.07%)  ???:std::_V2::condition_variable_any::_Unlock<std::mutex>::_Unlock(std::mutex&) [/home/noatley/3303/Assignment1/Assignment1]
+   13,000 ( 0.07%)  ???:std::_Rb_tree_header::_Rb_tree_header() [/home/noatley/3303/Assignment1/Assignment1]
+   12,362 ( 0.06%)  ???:std::shared_ptr<std::mutex>::shared_ptr(std::shared_ptr<std::mutex> const&) [/home/noatley/3303/Assignment1/Assignment1]
+   12,192 ( 0.06%)  ???:std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   12,018 ( 0.06%)  ???:__gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::sync() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   12,000 ( 0.06%)  ???:std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+   11,532 ( 0.06%)  ???:0x000000000010a430 [???]
+   11,532 ( 0.06%)  ???:0x000000000010a590 [???]
+   11,528 ( 0.06%)  ???:std::pair<std::_Rb_tree_const_iterator<int>, bool>::operator=(std::pair<std::_Rb_tree_const_iterator<int>, bool>&&) [/home/noatley/3303/Assignment1/Assignment1]
+   11,000 ( 0.06%)  ???:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Rb_tree() [/home/noatley/3303/Assignment1/Assignment1]
+   11,000 ( 0.06%)  ???:std::set<int, std::less<int>, std::allocator<int> >::set() [/home/noatley/3303/Assignment1/Assignment1]
+   11,000 ( 0.06%)  ???:std::set<int, std::less<int>, std::allocator<int> >::~set() [/home/noatley/3303/Assignment1/Assignment1]
+   10,620 ( 0.06%)  ./elf/../sysdeps/x86_64/tls_get_addr.S:__tls_get_addr [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+   10,608 ( 0.06%)  ???:std::__shared_ptr<std::mutex, (__gnu_cxx::_Lock_policy)2>::~__shared_ptr() [/home/noatley/3303/Assignment1/Assignment1]
+   10,596 ( 0.06%)  ./nptl/../sysdeps/nptl/futex-internal.h:pthread_cond_broadcast@@GLIBC_2.3.2
+   10,487 ( 0.05%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object
+   10,038 ( 0.05%)  ???:std::_Rb_tree_increment(std::_Rb_tree_node_base const*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    9,724 ( 0.05%)  ???:std::shared_ptr<std::mutex>::~shared_ptr() [/home/noatley/3303/Assignment1/Assignment1]
+    9,585 ( 0.05%)  ./elf/../sysdeps/generic/ldsodefs.h:do_lookup_x
+    9,216 ( 0.05%)  ./wcsmbs/./wcsmbs/btowc.c:btowc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    8,908 ( 0.05%)  ???:std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, true>(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&) [/home/noatley/3303/Assignment1/Assignment1]
+    8,177 ( 0.04%)  ???:0x00000000048f3800 [???]
+    8,169 ( 0.04%)  ./elf/./elf/dl-runtime.c:_dl_fixup [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    8,027 ( 0.04%)  ???:0x00000000048f64b0 [???]
+    8,013 ( 0.04%)  ???:0x00000000048f48a0 [???]
+    8,007 ( 0.04%)  ???:0x00000000048f30f0 [???]
+    8,007 ( 0.04%)  ???:0x00000000048f4b60 [???]
+    8,005 ( 0.04%)  ???:0x00000000048f34c0 [???]
+    8,005 ( 0.04%)  ???:0x00000000048f4c20 [???]
+    8,002 ( 0.04%)  ???:0x000000000010a4e0 [???]
+    8,002 ( 0.04%)  ???:std::ostream::operator<<(std::ostream& (*)(std::ostream&)) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    8,000 ( 0.04%)  ???:0x000000000010a5d0 [???]
+    7,965 ( 0.04%)  ???:std::uncaught_exception() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    7,668 ( 0.04%)  ./elf/../sysdeps/generic/dl-protected.h:do_lookup_x
+    7,080 ( 0.04%)  ???:__cxa_get_globals [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33]
+    7,000 ( 0.04%)  ???:std::_Rb_tree_key_compare<std::less<int> >::_Rb_tree_key_compare() [/home/noatley/3303/Assignment1/Assignment1]
+    7,000 ( 0.04%)  ???:std::__new_allocator<std::_Rb_tree_node<int> >::~__new_allocator() [/home/noatley/3303/Assignment1/Assignment1]
+    6,307 ( 0.03%)  ./nptl/./nptl/lowlevellock.c:__lll_lock_wake [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    6,216 ( 0.03%)  ./nptl/./nptl/cleanup_compat.c:_pthread_cleanup_push@@GLIBC_2.34 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+    6,181 ( 0.03%)  ???:std::remove_reference<std::unique_lock<std::mutex>&>::type&& std::move<std::unique_lock<std::mutex>&>(std::unique_lock<std::mutex>&) [/home/noatley/3303/Assignment1/Assignment1]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./elf/../sysdeps/generic/dl-new-hash.h
+  ./elf/../sysdeps/generic/dl-protected.h
+  ./elf/../sysdeps/generic/ldsodefs.h
+  ./elf/../sysdeps/x86_64/dl-machine.h
+  ./elf/../sysdeps/x86_64/tls_get_addr.S
+  ./elf/./elf/dl-lookup.c
+  ./elf/./elf/dl-reloc.c
+  ./elf/./elf/dl-runtime.c
+  ./elf/./elf/dl-tunables.c
+  ./elf/./elf/dl-version.c
+  ./elf/./elf/do-rel.h
+  ./io/../sysdeps/unix/sysv/linux/write.c
+  ./libio/./libio/fileops.c
+  ./libio/./libio/iofflush.c
+  ./libio/./libio/iofwrite.c
+  ./libio/./libio/libioP.h
+  ./libio/./libio/putc.c
+  ./malloc/./malloc/arena.c
+  ./malloc/./malloc/malloc.c
+  ./nptl/../nptl/descr.h
+  ./nptl/../nptl/pthread_mutex_lock.c
+  ./nptl/../sysdeps/nptl/futex-internal.h
+  ./nptl/./nptl/cancellation.c
+  ./nptl/./nptl/cleanup_compat.c
+  ./nptl/./nptl/futex-internal.c
+  ./nptl/./nptl/lowlevellock.c
+  ./nptl/./nptl/pthread_cond_broadcast.c
+  ./nptl/./nptl/pthread_cond_common.c
+  ./nptl/./nptl/pthread_cond_wait.c
+  ./nptl/./nptl/pthread_mutex_lock.c
+  ./nptl/./nptl/pthread_mutex_unlock.c
+  ./posix/../sysdeps/unix/sysv/linux/nanosleep.c
+  ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/strlen-avx2.S
+  ./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c
+  ./wcsmbs/./wcsmbs/btowc.c
+
